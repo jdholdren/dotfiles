@@ -12,19 +12,15 @@ ZSH_THEME="spaceship"
 
 export GOPATH=~/workspace/gospace
 export GOBIN=$GOPATH/bin
-export GOPRIVATE=github.com/TangramFlex/*,gitlab.com/ankored/*,github.tangramflex.tech/*
+export GOPRIVATE=gitlab.com/ankored/*
 
 export PATH=$PATH:$GOBIN
 export PATH=$PATH:~/ngrok
 
 alias godir="cd $GOPATH/src/github.com"
-alias gocal="cd $HOME/workspace/work/calypso"
 alias gchapm="git checkout master && git pull"
 
 export PATH=$PATH:/usr/local/sbin
-
-export PATH=$PATH:/Users/jamesholdren/workspace/protoc-3.8.0-osx-x86_64/bin
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # kubernetes
 alias k="kubectl"
