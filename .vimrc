@@ -35,9 +35,6 @@ noremap <Leader>p "*p
 noremap <Leader>Y "+y
 noremap <Leader>P "+p
 
-let g:everforest_background = 'soft'
-let g:everforest_better_performance = 1
-
 " use <tab> to trigger completion and navigate to the next complete item
 function! CheckBackspace() abort
   let col = col('.') - 1
@@ -91,6 +88,7 @@ call plug#begin()
 	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 	Plug 'preservim/nerdtree'
 	Plug 'sainnhe/everforest'
+	" Plug 'morhetz/gruvbox'
 
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
@@ -110,5 +108,6 @@ let g:everforest_background = 'soft'
 let g:everforest_better_performance = 1
 let g:everforest_disable_italic_comment = 1
 colorscheme everforest
+set background=dark
 
 autocmd VimEnter * NERDTree
