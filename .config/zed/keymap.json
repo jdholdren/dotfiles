@@ -1,0 +1,42 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+      "ctrl-w ctrl-t": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {}
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "ctrl-d": [
+        "workspace::SendKeystrokes",
+        "j j j j j"
+      ],
+      "ctrl-f": [
+        "workspace::SendKeystrokes",
+        "j j j j j j j j j j j j j j j"
+      ],
+      "ctrl-u": [
+        "workspace::SendKeystrokes",
+        "k k k k k"
+      ],
+      "ctrl-b": [
+        "workspace::SendKeystrokes",
+        "k k k k k k k k k k k k k k k"
+      ],
+      "A": "project_panel::NewFile"
+    }
+  }
+]
